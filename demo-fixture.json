@@ -1,0 +1,201 @@
+{
+  "_meta": {
+    "note": "PUBLIC DEMO FIXTURE. Fictional data only. RM-tier surface. No numeric RIPI score exists in this file by design. No divergence/manager/coaching data. Cast matches the marketing mockups so a prospect who sees a screenshot and connects the MCP lands on the same people.",
+    "demoRm": "Marcus Johnson",
+    "demoOrg": "Demo Agency"
+  },
+
+  "dimensionOrder": ["Clarity", "Cadence", "Responsiveness", "Bench Strength", "Meaningful Moments"],
+
+  "contacts": [
+    {
+      "id": "demo-isabella-chen",
+      "name": "Isabella Chen",
+      "title": "SVP Partnerships",
+      "company": "Meridian Group",
+      "email": "i.chen@meridiangroup.com",
+      "health": "yellow",
+      "healthLabel": "Watch",
+      "lastTouchDays": 18,
+      "dimensions": {
+        "Clarity": "green",
+        "Cadence": "red",
+        "Responsiveness": "yellow",
+        "Bench Strength": "green",
+        "Meaningful Moments": "yellow"
+      },
+      "radarShape": {
+        "Clarity": 0.88,
+        "Cadence": 0.62,
+        "Responsiveness": 0.91,
+        "Bench Strength": 0.59,
+        "Meaningful Moments": 0.78
+      },
+      "briefMe": "Isabella is detail-oriented and data-driven — she'll want specifics on the Q3 metrics before committing to anything. She flagged last quarter that response times felt slow; come in ready to address that directly. Her team is mid-reorg, so anything affecting timeline is a sensitivity.",
+      "cadenceNote": "Cadence has slipped to Red this month. She reached out twice before your last reply — the next response sets the tone. Be specific, be fast.",
+      "openContext": ["Stock +4.2%", "Reorg underway", "Q2 beat estimates"]
+    },
+    {
+      "id": "demo-priya-nair",
+      "name": "Priya Nair",
+      "title": "Director, Strategic Alliances",
+      "company": "Meridian Group",
+      "email": "p.nair@meridiangroup.com",
+      "health": "green",
+      "healthLabel": "Healthy",
+      "lastTouchDays": 0,
+      "dimensions": {
+        "Clarity": "green",
+        "Cadence": "green",
+        "Responsiveness": "green",
+        "Bench Strength": "yellow",
+        "Meaningful Moments": "green"
+      },
+      "radarShape": {
+        "Clarity": 0.84,
+        "Cadence": 0.9,
+        "Responsiveness": 0.87,
+        "Bench Strength": 0.55,
+        "Meaningful Moments": 0.8
+      },
+      "briefMe": "New to this account — first meeting. She's been briefed by Isabella and is likely evaluating fit. Warm, collaborative tone. Ask her what success looks like from her seat.",
+      "cadenceNote": null,
+      "openContext": ["New to account", "Briefed by Isabella"]
+    },
+    {
+      "id": "demo-taylor-simmons",
+      "name": "Taylor Simmons",
+      "title": "VP Finance",
+      "company": "Northwind Labs",
+      "email": "t.simmons@northwindlabs.com",
+      "health": "green",
+      "healthLabel": "Healthy",
+      "lastTouchDays": 1,
+      "dimensions": {
+        "Clarity": "green",
+        "Cadence": "green",
+        "Responsiveness": "yellow",
+        "Bench Strength": "green",
+        "Meaningful Moments": "green"
+      },
+      "radarShape": {
+        "Clarity": 0.86,
+        "Cadence": 0.82,
+        "Responsiveness": 0.68,
+        "Bench Strength": 0.79,
+        "Meaningful Moments": 0.83
+      },
+      "briefMe": "Finance just signed off on the 6-month pilot — momentum is on your side. Taylor moves on evidence and clear next steps. Confirm scope and the success metric in writing while goodwill is high.",
+      "cadenceNote": null,
+      "openContext": ["Pilot approved", "Budget cleared"]
+    },
+    {
+      "id": "demo-nadia-kim",
+      "name": "Nadia Kim",
+      "title": "Head of EMEA Expansion",
+      "company": "Meridian Group",
+      "email": "n.kim@meridiangroup.com",
+      "health": "yellow",
+      "healthLabel": "Watch",
+      "lastTouchDays": 6,
+      "dimensions": {
+        "Clarity": "yellow",
+        "Cadence": "yellow",
+        "Responsiveness": "green",
+        "Bench Strength": "yellow",
+        "Meaningful Moments": "yellow"
+      },
+      "radarShape": {
+        "Clarity": 0.7,
+        "Cadence": 0.66,
+        "Responsiveness": 0.85,
+        "Bench Strength": 0.6,
+        "Meaningful Moments": 0.64
+      },
+      "briefMe": "Recently introduced via Amir — the relationship is still forming. She leads EMEA expansion, so anything you bring should connect to a London/EMEA angle. Early days: invest in a real first conversation before pitching.",
+      "cadenceNote": null,
+      "openContext": ["Warm intro via Amir", "EMEA focus"]
+    },
+    {
+      "id": "demo-amir-patel",
+      "name": "Amir Patel",
+      "title": "Managing Partner",
+      "company": "Halden & Co",
+      "email": "a.patel@haldenco.com",
+      "health": "green",
+      "healthLabel": "Healthy",
+      "lastTouchDays": 1,
+      "dimensions": {
+        "Clarity": "green",
+        "Cadence": "green",
+        "Responsiveness": "green",
+        "Bench Strength": "green",
+        "Meaningful Moments": "green"
+      },
+      "radarShape": {
+        "Clarity": 0.85,
+        "Cadence": 0.83,
+        "Responsiveness": 0.88,
+        "Bench Strength": 0.82,
+        "Meaningful Moments": 0.86
+      },
+      "briefMe": "A strong, generous connector — he just made a warm intro to Nadia. Relationship is healthy across the board. Best move here is to close the loop: thank him, and tell him what came of the intro. Reciprocity keeps this one warm.",
+      "cadenceNote": null,
+      "openContext": ["Made intro to Nadia", "Reliable connector"]
+    },
+    {
+      "id": "demo-raj-johal",
+      "name": "Raj Johal",
+      "title": "Director of Operations",
+      "company": "Cortex Retail",
+      "email": "r.johal@cortexretail.com",
+      "health": "green",
+      "healthLabel": "Healthy",
+      "lastTouchDays": 2,
+      "dimensions": {
+        "Clarity": "green",
+        "Cadence": "yellow",
+        "Responsiveness": "green",
+        "Bench Strength": "yellow",
+        "Meaningful Moments": "green"
+      },
+      "radarShape": {
+        "Clarity": 0.82,
+        "Cadence": 0.67,
+        "Responsiveness": 0.84,
+        "Bench Strength": 0.58,
+        "Meaningful Moments": 0.81
+      },
+      "briefMe": "Just spent real time in the product and came back with specific first impressions — that's an engaged evaluator, not a tire-kicker. Follow up on the things that stood out to him; he's telling you where the value landed.",
+      "cadenceNote": null,
+      "openContext": ["Active evaluator", "Strong first impressions"]
+    },
+    {
+      "id": "demo-brianna-wells",
+      "name": "Brianna Wells",
+      "title": "Head of Procurement",
+      "company": "Ardent Industries",
+      "email": "b.wells@ardentindustries.com",
+      "health": "yellow",
+      "healthLabel": "Watch",
+      "lastTouchDays": 34,
+      "dimensions": {
+        "Clarity": "yellow",
+        "Cadence": "red",
+        "Responsiveness": "yellow",
+        "Bench Strength": "green",
+        "Meaningful Moments": "yellow"
+      },
+      "radarShape": {
+        "Clarity": 0.68,
+        "Cadence": 0.55,
+        "Responsiveness": 0.7,
+        "Bench Strength": 0.8,
+        "Meaningful Moments": 0.66
+      },
+      "briefMe": "She flagged early that the annual vendor review starts soon — that's a buying-window signal, not small talk. Cadence has gone quiet at exactly the wrong time. Re-engage now with something concrete tied to the review timeline, before the process locks.",
+      "cadenceNote": "No touchpoint in 34 days, heading into a vendor review window. This is the one to re-open this week.",
+      "openContext": ["Vendor review approaching", "Gone quiet"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.centricai/centric-demo",
+  "description": "Try Centric relationship intelligence: Brief Me, Relational IP radar, Draft As. Demo data.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://centric-demo-mcp-808053805730.us-central1.run.app/mcp"
+    }
+  ]
+}
