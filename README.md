@@ -1,5 +1,7 @@
 # Centric Demo MCP
 
+[![smithery badge](https://smithery.ai/badge/centricai/centric-demo)](https://smithery.ai/servers/centricai/centric-demo)
+
 A public, registry-safe MCP server that lets a prospect — or an AI agent crawling
 the MCP registry — feel the Centric RM experience against a frozen fictional cast.
 This is a **marketing asset**, not the product. The real customer server stays
