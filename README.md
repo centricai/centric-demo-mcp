@@ -1,88 +1,59 @@
 # Centric Demo MCP
 
-[![smithery badge](https://smithery.ai/badge/centricai/centric-demo)](https://smithery.ai/servers/centricai/centric-demo)
+Try Centric's relationship intelligence from any MCP-compatible AI assistant — Claude, ChatGPT, Cursor, and others. This demo server runs against a sample book of business with fictional contacts, so you can experience the product with no signup and no real data.
 
-A public, registry-safe MCP server that lets a prospect — or an AI agent crawling
-the MCP registry — feel the Centric RM experience against a frozen fictional cast.
-This is a **marketing asset**, not the product. The real customer server stays
-private behind OAuth.
+Centric is a relationship intelligence platform for people-facing professionals — relationship managers, client leads, and the teams who support them. It reads the state of a relationship and tells you what matters before your next interaction.
 
-## What it exposes (RM tier only)
+## What you can try
 
-- `list_demo_contacts` — the fictional book of business
-- `get_contact_profile` — five dimensions as Red/Yellow/Green, Brief Me, cadence note
-- `brief_me` — the hero tool: synthesized pre-interaction brief
-- `draft_as` — Draft As in email / text / linkedin / talking_points
-- `get_radar` — radar shape, five axes as R/Y/G + normalized position
-- `demo_temperature_check` — the temperature-check loop, acknowledged not saved
+Connect the server and ask your assistant to:
 
-## What it deliberately does NOT expose (the moat)
+- **List the sample contacts** — a demo book of business to explore.
+- **Get a contact's relationship health** — five dimensions (Clarity, Cadence, Responsiveness, Bench Strength, Meaningful Moments), each shown as Red / Yellow / Green.
+- **Brief me on a contact** — a synthesized read before you reach out: what to open with, what to be aware of.
+- **Draft outreach** — email, text, LinkedIn, or talking points, grounded in the contact's context.
+- **See the relationship radar** — the five dimensions at a glance.
+- **Run a temperature check** — the quick "how did that interaction feel?" loop.
 
-Enforced by absence, not by feature flags:
+Everything here runs on fictional data. The hero contact is Isabella Chen (SVP Partnerships, Meridian Group); the demo relationship manager is Marcus Johnson.
 
-- **No numeric Relational IP score.** No response object contains a score field.
-  `get_radar` returns normalized positions for rendering only.
-- **No divergence** — no perception-vs-measurement, no Annika/Keenan cast.
-- **No manager tools** — no digest, book-of-business rollup, or coaching.
-- **No cross-RM or cross-contact aggregation.**
-- **No scoring methodology, weights, or cross-dimension logic.**
-- **No write path.** Nothing persists.
-- **No database credentials.** Reads `demo-fixture.json` only. Physically cannot
-  return a real contact.
+## Connect
 
-## The cast
-
-Matches the marketing mockups so a prospect who sees a screenshot and then
-connects the MCP lands on the same people. Demo RM is Marcus Johnson.
-Hero contact is Isabella Chen (SVP Partnerships, Meridian Group).
-
-## File layout
-
-- `tools.js` — the six tools, single source of truth (shared by both transports)
-- `http.js` — HTTP entry point (Cloud Run / public). `POST /mcp`. **Default.**
-- `server.js` — stdio entry point (local testing / Claude Desktop)
-- `demo-fixture.json` — the frozen fictional cast. Only data the image carries.
-- `Dockerfile` — slim node base, prod deps only, non-root
-
-## Run locally
+This is a remote server — there's nothing to install. Point your MCP client at:
 
 ```
-npm install
-npm start            # HTTP on :8080, POST /mcp
-npm run start:stdio  # stdio, for Claude Desktop
+https://centric-demo-mcp-808053805730.us-central1.run.app/mcp
 ```
 
-## Connect via Claude Desktop (stdio, for testing)
+Most assistants let you add a remote MCP server in their settings. If your client needs a config entry, use:
 
 ```json
 {
   "mcpServers": {
     "centric-demo": {
-      "command": "node",
-      "args": ["/absolute/path/to/centric-demo-mcp/server.js"]
+      "url": "https://centric-demo-mcp-808053805730.us-central1.run.app/mcp"
     }
   }
 }
 ```
 
-## Deploy to Cloud Run (separate service — never the prod backend)
+For clients that connect through the `mcp-remote` bridge instead:
 
+```json
+{
+  "mcpServers": {
+    "centric-demo": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://centric-demo-mcp-808053805730.us-central1.run.app/mcp"]
+    }
+  }
+}
 ```
-gcloud run deploy centric-demo-mcp \
-  --source . \
-  --region us-central1 \
-  --allow-unauthenticated \
-  --min-instances 1 \
-  --port 8080
-```
 
-`--allow-unauthenticated` is correct here: this endpoint is *meant* to be public.
-It carries no secrets and no database credentials, so there is nothing to protect.
-Map it to its own subdomain (e.g. `demo-mcp.getcentric.ai`) for the registry.
+## The full product
 
-## Going public
+This demo shows the individual experience against sample data. The full Centric platform connects to your team's real book of business, with organizational controls, privacy safeguards, and the manager and coaching tools that make it a system of record — not just a lookup.
 
-Once the URL is live, publish to the official MCP Registry and claim the crawled
-directory copies (Smithery, Glama, mcp.so). This server has nothing behind it, so
-it is safe under adversarial probing: the worst outcome is someone reads a
-fictional brief about Isabella Chen.
+Learn more at [getcentric.ai](https://getcentric.ai).
+
+[![smithery badge](https://smithery.ai/badge/centricai/centric-demo)](https://smithery.ai/servers/centricai/centric-demo)
