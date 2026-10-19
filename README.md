@@ -2,6 +2,8 @@
 
 Try Centric's relationship intelligence from any MCP-compatible AI assistant — Claude, ChatGPT, Cursor, and others. This demo server runs against a sample book of business with fictional contacts, so you can experience the product with no signup and no real data.
 
+Building your own product? Use the ARVX connector instead: https://mcp.arvx.ai/mcp (docs at https://developer.arvx.ai).
+
 Centric is a relationship intelligence platform for people-facing professionals — relationship managers, client leads, and the teams who support them. It reads the state of a relationship and tells you what matters before your next interaction.
 
 ## What you can try
